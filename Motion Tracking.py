@@ -91,7 +91,6 @@ while (True):
     cv2.putText(frame2, "Standard Deviation - {}".format(round(stDev[0][0],0)), (70, 70), font, 1, (255, 0, 255), 1, cv2.LINE_AA)
     cv2.putText(frame2, "Date / Time - {}".format(str(datetime.today())), (30, 30), font, 0.5, (255, 0, 0), 1, cv2.LINE_AA)
     if stDev > sdThresh:
-        print("Motion detected.. Do something")
         print("writing frames")
         framelist.append(frame1)
         framelist.append(frame2)
